@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.customviews.MainActivity">
+
+    <com.example.admin.customviews.CustomPie
+        android:id="@+id/pie_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"/>
+    <com.example.admin.customviews.CustomViewButton
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/cellStyle"
+        android:id="@+id/btnCustom"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorGreen"
+        android:layout_column="3"
+        android:layout_weight="1"
+        />
+    <com.example.admin.customviews.CustomViewTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ctvText"
+        android:layout_weight="1"
+        android:text="This is a Custom TextView"
+        android:textSize="35dp"/>
+</LinearLayout>
